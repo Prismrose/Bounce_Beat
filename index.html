@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bounce Beat</title>
+	</head>
+	<body>
+		<h1>Bounce Beat</h1>
+		<div id="gameport"></div>
+
+		<h1>Instructions</h1>
+		<p>Press S to strike! Strike the bouncing balls to the beat (turn on volume!)</p>
+
+		<div id="disqus_thread"></div>
+
+		<script>
+			(function() {
+			var d = document, s = d.createElement('script');
+			s.src = 'https://nau-cs413.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+			})();
+		</script>
+
+		<script src="pixi.js"></script>
+		<script src="pixi-timer.js"></script>
+		<script src="pixi-sound.js"></script>
+		<script src="game.js"></script>
+	</body>
+</html>
