@@ -1,0 +1,515 @@
+{
+	"frames": {
+		"two_ball01.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball02.png": {
+			"frame": {
+				"x": 603,
+				"y": 1,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball03.png": {
+			"frame": {
+				"x": 1205,
+				"y": 1,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball04.png": {
+			"frame": {
+				"x": 1,
+				"y": 303,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball05.png": {
+			"frame": {
+				"x": 603,
+				"y": 303,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball06.png": {
+			"frame": {
+				"x": 1205,
+				"y": 303,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball07.png": {
+			"frame": {
+				"x": 1,
+				"y": 605,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball08.png": {
+			"frame": {
+				"x": 603,
+				"y": 605,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball09.png": {
+			"frame": {
+				"x": 1205,
+				"y": 605,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball10.png": {
+			"frame": {
+				"x": 1,
+				"y": 907,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball11.png": {
+			"frame": {
+				"x": 603,
+				"y": 907,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball12.png": {
+			"frame": {
+				"x": 1205,
+				"y": 907,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball13.png": {
+			"frame": {
+				"x": 1,
+				"y": 1209,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball14.png": {
+			"frame": {
+				"x": 603,
+				"y": 1209,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball15.png": {
+			"frame": {
+				"x": 1205,
+				"y": 1209,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball16.png": {
+			"frame": {
+				"x": 1,
+				"y": 1511,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball17.png": {
+			"frame": {
+				"x": 603,
+				"y": 1511,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball18.png": {
+			"frame": {
+				"x": 1205,
+				"y": 1511,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball19.png": {
+			"frame": {
+				"x": 1,
+				"y": 1813,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball20.png": {
+			"frame": {
+				"x": 603,
+				"y": 1813,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball21.png": {
+			"frame": {
+				"x": 1205,
+				"y": 1813,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball22.png": {
+			"frame": {
+				"x": 1807,
+				"y": 1,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball23.png": {
+			"frame": {
+				"x": 1807,
+				"y": 303,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball24.png": {
+			"frame": {
+				"x": 1807,
+				"y": 605,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"two_ball25.png": {
+			"frame": {
+				"x": 1807,
+				"y": 907,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 2408,
+			"h": 2114
+		},
+		"scale": "1"
+	}
+}

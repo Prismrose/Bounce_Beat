@@ -1,6 +1,6 @@
 {
 	"frames": {
-		"three_ball01.png": {
+		"three_ball1.png": {
 			"frame": {
 				"x": 1,
 				"y": 1,
@@ -20,7 +20,7 @@
 				"h": 300
 			}
 		},
-		"three_ball02.png": {
+		"three_ball2.png": {
 			"frame": {
 				"x": 603,
 				"y": 1,
@@ -40,7 +40,7 @@
 				"h": 300
 			}
 		},
-		"three_ball03.png": {
+		"three_ball3.png": {
 			"frame": {
 				"x": 1205,
 				"y": 1,
@@ -60,27 +60,7 @@
 				"h": 300
 			}
 		},
-		"three_ball04.png": {
-			"frame": {
-				"x": 1807,
-				"y": 1,
-				"w": 600,
-				"h": 300
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 600,
-				"h": 300
-			},
-			"sourceSize": {
-				"w": 600,
-				"h": 300
-			}
-		},
-		"three_ball05.png": {
+		"three_ball4.png": {
 			"frame": {
 				"x": 1,
 				"y": 303,
@@ -100,7 +80,7 @@
 				"h": 300
 			}
 		},
-		"three_ball06.png": {
+		"three_ball5.png": {
 			"frame": {
 				"x": 603,
 				"y": 303,
@@ -120,7 +100,7 @@
 				"h": 300
 			}
 		},
-		"three_ball07.png": {
+		"three_ball6.png": {
 			"frame": {
 				"x": 1205,
 				"y": 303,
@@ -140,10 +120,10 @@
 				"h": 300
 			}
 		},
-		"three_ball08.png": {
+		"three_ball7.png": {
 			"frame": {
-				"x": 1807,
-				"y": 303,
+				"x": 1,
+				"y": 605,
 				"w": 600,
 				"h": 300
 			},
@@ -160,9 +140,29 @@
 				"h": 300
 			}
 		},
-		"three_ball09.png": {
+		"three_ball8.png": {
 			"frame": {
-				"x": 1,
+				"x": 603,
+				"y": 605,
+				"w": 600,
+				"h": 300
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 600,
+				"h": 300
+			},
+			"sourceSize": {
+				"w": 600,
+				"h": 300
+			}
+		},
+		"three_ball9.png": {
+			"frame": {
+				"x": 1205,
 				"y": 605,
 				"w": 600,
 				"h": 300
@@ -182,8 +182,8 @@
 		},
 		"three_ball10.png": {
 			"frame": {
-				"x": 603,
-				"y": 605,
+				"x": 1,
+				"y": 907,
 				"w": 600,
 				"h": 300
 			},
@@ -202,8 +202,8 @@
 		},
 		"three_ball11.png": {
 			"frame": {
-				"x": 1205,
-				"y": 605,
+				"x": 603,
+				"y": 907,
 				"w": 600,
 				"h": 300
 			},
@@ -222,8 +222,8 @@
 		},
 		"three_ball12.png": {
 			"frame": {
-				"x": 1807,
-				"y": 605,
+				"x": 1205,
+				"y": 907,
 				"w": 600,
 				"h": 300
 			},
@@ -243,7 +243,7 @@
 		"three_ball13.png": {
 			"frame": {
 				"x": 1,
-				"y": 907,
+				"y": 1209,
 				"w": 600,
 				"h": 300
 			},
@@ -263,7 +263,7 @@
 		"three_ball14.png": {
 			"frame": {
 				"x": 603,
-				"y": 907,
+				"y": 1209,
 				"w": 600,
 				"h": 300
 			},
@@ -283,7 +283,7 @@
 		"three_ball15.png": {
 			"frame": {
 				"x": 1205,
-				"y": 907,
+				"y": 1209,
 				"w": 600,
 				"h": 300
 			},
@@ -302,8 +302,8 @@
 		},
 		"three_ball16.png": {
 			"frame": {
-				"x": 1807,
-				"y": 907,
+				"x": 1,
+				"y": 1511,
 				"w": 600,
 				"h": 300
 			},
@@ -322,8 +322,8 @@
 		},
 		"three_ball17.png": {
 			"frame": {
-				"x": 1,
-				"y": 1209,
+				"x": 603,
+				"y": 1511,
 				"w": 600,
 				"h": 300
 			},
@@ -342,8 +342,8 @@
 		},
 		"three_ball18.png": {
 			"frame": {
-				"x": 603,
-				"y": 1209,
+				"x": 1205,
+				"y": 1511,
 				"w": 600,
 				"h": 300
 			},
@@ -362,8 +362,8 @@
 		},
 		"three_ball19.png": {
 			"frame": {
-				"x": 1205,
-				"y": 1209,
+				"x": 1,
+				"y": 1813,
 				"w": 600,
 				"h": 300
 			},
@@ -382,8 +382,8 @@
 		},
 		"three_ball20.png": {
 			"frame": {
-				"x": 1807,
-				"y": 1209,
+				"x": 603,
+				"y": 1813,
 				"w": 600,
 				"h": 300
 			},
@@ -402,8 +402,8 @@
 		},
 		"three_ball21.png": {
 			"frame": {
-				"x": 1,
-				"y": 1511,
+				"x": 1205,
+				"y": 1813,
 				"w": 600,
 				"h": 300
 			},
@@ -422,8 +422,8 @@
 		},
 		"three_ball22.png": {
 			"frame": {
-				"x": 603,
-				"y": 1511,
+				"x": 1807,
+				"y": 1,
 				"w": 600,
 				"h": 300
 			},
@@ -442,8 +442,8 @@
 		},
 		"three_ball23.png": {
 			"frame": {
-				"x": 1205,
-				"y": 1511,
+				"x": 1807,
+				"y": 303,
 				"w": 600,
 				"h": 300
 			},
@@ -463,7 +463,7 @@
 		"three_ball24.png": {
 			"frame": {
 				"x": 1807,
-				"y": 1511,
+				"y": 605,
 				"w": 600,
 				"h": 300
 			},
@@ -482,8 +482,8 @@
 		},
 		"three_ball25.png": {
 			"frame": {
-				"x": 1,
-				"y": 1813,
+				"x": 1807,
+				"y": 907,
 				"w": 600,
 				"h": 300
 			},
@@ -502,8 +502,8 @@
 		},
 		"three_ball26.png": {
 			"frame": {
-				"x": 603,
-				"y": 1813,
+				"x": 1807,
+				"y": 1209,
 				"w": 600,
 				"h": 300
 			},
@@ -522,8 +522,8 @@
 		},
 		"three_ball27.png": {
 			"frame": {
-				"x": 1205,
-				"y": 1813,
+				"x": 1807,
+				"y": 1511,
 				"w": 600,
 				"h": 300
 			},
@@ -599,106 +599,6 @@
 				"w": 600,
 				"h": 300
 			}
-		},
-		"three_ball31.png": {
-			"frame": {
-				"x": 1205,
-				"y": 2115,
-				"w": 600,
-				"h": 300
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 600,
-				"h": 300
-			},
-			"sourceSize": {
-				"w": 600,
-				"h": 300
-			}
-		},
-		"three_ball32.png": {
-			"frame": {
-				"x": 1807,
-				"y": 2115,
-				"w": 600,
-				"h": 300
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 600,
-				"h": 300
-			},
-			"sourceSize": {
-				"w": 600,
-				"h": 300
-			}
-		},
-		"three_ball33.png": {
-			"frame": {
-				"x": 2409,
-				"y": 1,
-				"w": 600,
-				"h": 300
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 600,
-				"h": 300
-			},
-			"sourceSize": {
-				"w": 600,
-				"h": 300
-			}
-		},
-		"three_ball34.png": {
-			"frame": {
-				"x": 2409,
-				"y": 303,
-				"w": 600,
-				"h": 300
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 600,
-				"h": 300
-			},
-			"sourceSize": {
-				"w": 600,
-				"h": 300
-			}
-		},
-		"three_ball35.png": {
-			"frame": {
-				"x": 2409,
-				"y": 605,
-				"w": 600,
-				"h": 300
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 600,
-				"h": 300
-			},
-			"sourceSize": {
-				"w": 600,
-				"h": 300
-			}
 		}
 	},
 	"meta": {
@@ -707,7 +607,7 @@
 		"image": "spritesheet.png",
 		"format": "RGBA8888",
 		"size": {
-			"w": 3010,
+			"w": 2408,
 			"h": 2416
 		},
 		"scale": "1"
