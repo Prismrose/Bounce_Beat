@@ -4,6 +4,14 @@ var gameport = document.getElementById("gameport");
 var renderer = PIXI.autoDetectRenderer({width: 600, height: 300, backgroundColor: 0x527db2});
 gameport.appendChild(renderer.view);
 
+//Music
+const menu_theme = PIXI.sound.Sound.from('audio/bounce_beat_menu.mp3');
+const main_theme = PIXI.sound.Sound.from('audio/bounce_beat.mp3');
+menu_theme.loop = true;
+main_theme.loop = false;
+menu_theme.play();
+
+//Containers
 var main = new PIXI.Container();
 var menu = new PIXI.Container();
 var stage = new PIXI.Container();
@@ -103,6 +111,7 @@ hit_window.on('start', function(elapsed){console.log('start window');});
 hit_window.on('end', function(elapsed){
 	game_over.text = "GAME OVER\nScore: " + score;
 	console.log('end window');
+	main_theme.stop();
 	game_over.x = 200;
 	game_over.y = 70;
 	stage.addChild(game_over);
@@ -214,7 +223,7 @@ document.addEventListener('keydown', keydownEventHandler);
 document.addEventListener('keyup', keyupEventHandler);
 
 //Start main game & menu functionality
-wait = PIXI.timerManager.createTimer(4000);
+wait = PIXI.timerManager.createTimer(2975);
 wait.on('end', function(elapsed) {
 	three_ball.play();
 	sprites[0].position.x = 0;
@@ -231,6 +240,8 @@ function mouseHandler(e)
 		main.removeChild(menu);
 		main.addChild(stage);
 		wait.start();
+		menu_theme.stop();
+		main_theme.play();
 	}
 	else
 	{
@@ -239,6 +250,7 @@ function mouseHandler(e)
 		score = 0;
 		wait.reset();
 		wait.start();
+		main_theme.play();
 	}
 }
 
