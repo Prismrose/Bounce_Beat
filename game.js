@@ -1,10 +1,33 @@
 var gameport = document.getElementById("gameport");
 
+//Setting up game
 var renderer = PIXI.autoDetectRenderer({width: 600, height: 300, backgroundColor: 0x527db2});
 gameport.appendChild(renderer.view);
+
+var main = new PIXI.Container();
+var menu = new PIXI.Container();
 var stage = new PIXI.Container();
+
+//Main menu
+var t_menu = PIXI.Texture.from("images/menu.png");
+var menu_hover = PIXI.Texture.from("images/menu_hover.png");
+var t_click_box = PIXI.Texture.from("images/click_box.png");
+
+var s_menu = new PIXI.Sprite(t_menu);
+menu.addChild(s_menu);
+
+var click_box = new PIXI.Sprite(t_click_box);
+click_box.position.x = 235;
+click_box.position.y = 120;
+menu.addChild(click_box);
+click_box.interactive = true;
+
+main.addChild(menu);
+
+//Main game
 const loader = new PIXI.Loader();
 
+//Setting the animations and frame data, then turning them into sprites
 animations = ['three_ball', 'three_ball_hit'];
 frame_data = [30, 5];
 var url;
@@ -40,6 +63,7 @@ function ready()
 	console.log('done.');
 }
 
+//Create striker and hit box, set them onto stage
 var t_striker = PIXI.Texture.from("images/striker.png");
 var hit_idle = PIXI.Texture.from("images/hitbox_idle.png");
 var hit = PIXI.Texture.from("images/hitbox_hit.png");
@@ -59,15 +83,33 @@ stage.addChild(hitbox);
 function animate()
 {
 	requestAnimationFrame(animate);
-	renderer.render(stage);
+	renderer.render(main);
 	PIXI.timerManager.update();
 }
 animate();
 
+var score = 0;
+var t_retry = PIXI.Texture.from("images/retry.png");
+var retry = new PIXI.Sprite(t_retry);
+retry.position.x  = 220;
+retry.position.y = 140;
+retry.interactive = true;
+
+let game_over = new PIXI.Text("GAME OVER\nScore:",{fontFamily : 'Arial', fontSize: 28, fill : 0x000000, align : 'center'});
+
+//Hit window Timer
 hit_window = PIXI.timerManager.createTimer(150);
 hit_window.on('start', function(elapsed){console.log('start window');});
-hit_window.on('end', function(elapsed){console.log('end window');});
+hit_window.on('end', function(elapsed){
+	game_over.text = "GAME OVER\nScore: " + score;
+	console.log('end window');
+	game_over.x = 200;
+	game_over.y = 70;
+	stage.addChild(game_over);
+	stage.addChild(retry);
+});
 
+//Ball class to pack all the important parts together
 class Ball
 {
 	constructor(main_sprite, _hit_sprite, duration_to_hit)
@@ -86,20 +128,10 @@ class Ball
 	set_hit()
 	{
 		this.sprite = this.hit_sprite;
-		this.hit_sprite.position.x = 0;
-		this.hit_sprite.position.y = 0;
-		this.spr_holder.position.x = -1000;
-		this.spr_holder.position.y = -1000;
 	}
 	set_main()
 	{
 		this.sprite = this.spr_holder;
-		this.sprite.position.x = 0;
-		this.sprite.position.y = 0;
-		this.spr_holder.position.x = 0;
-		this.spr_holder.position.y = 0;
-		this.hit_sprite.position.x = -1000;
-		this.hit_sprite.position.y = -1000;
 	}
 	play()
 	{
@@ -124,12 +156,10 @@ class Ball
 
 three_ball = new Ball(sprites[0], sprites[1], 1000)
 
+//After hitting the ball, this timer comes on
 after_hit = PIXI.timerManager.createTimer(500);
-after_hit.on('start', function(elapsed) {
-	console.log('hey.');
-});
+after_hit.on('start', function(elapsed) {});
 after_hit.on('end', function(elapsed) {
-	console.log('bye.');
 	three_ball.set_main();
 	sprites[0].position.x = 0;
 	sprites[0].position.y = 0;
@@ -139,6 +169,7 @@ after_hit.on('end', function(elapsed) {
 	hitbox.texture = hit_idle;
 	after_hit.reset();
 });
+
 
 //Boolean for key repetition
 var keyStayedPressed = true;
@@ -156,6 +187,7 @@ function keydownEventHandler(e)
 		{
 			hitbox.texture = hit;
 			three_ball.set_hit();
+			score += 1;
 			sprites[1].position.x = 0;
 			sprites[1].position.y = 0;
 			sprites[0].position.x = -1000;
@@ -181,6 +213,7 @@ function keyupEventHandler(e)
 document.addEventListener('keydown', keydownEventHandler);
 document.addEventListener('keyup', keyupEventHandler);
 
+//Start main game & menu functionality
 wait = PIXI.timerManager.createTimer(4000);
 wait.on('end', function(elapsed) {
 	three_ball.play();
@@ -190,9 +223,33 @@ wait.on('end', function(elapsed) {
 	sprites[1].position.y = -1000;
 });
 
-wait.start();
 
-/* TODO
- * Create class system to organize balls
- * Add game behavior and incorporate rest of balls
- */
+function mouseHandler(e)
+{
+	if (!wait.isStarted)
+	{
+		main.removeChild(menu);
+		main.addChild(stage);
+		wait.start();
+	}
+	else
+	{
+		stage.removeChild(game_over);
+		stage.removeChild(retry);
+		score = 0;
+		wait.reset();
+		wait.start();
+	}
+}
+
+click_box.on('mousedown',mouseHandler);
+click_box.hitArea = new PIXI.Rectangle(0,0,135,65);
+click_box.mouseover = function(ev)
+{
+	s_menu.texture = menu_hover;
+}
+click_box.mouseout = function(ev)
+{
+	s_menu.texture = t_menu;
+}
+retry.on('mousedown', mouseHandler);
